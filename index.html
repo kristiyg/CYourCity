@@ -25,26 +25,27 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>C Your City</a>
+                <a href="#top" onclick=$("menu-close").click();>Your Account</a>
             </li>
             <li>
             	<a href="#top" onclick=$("#menu-close").click();>Bookmarked Places</a>
     		</li>
-    		<li>
-    			<a href="#top" onclick=$("menu-close").click();>Your Account</a>
-    		</li>
     		<hr class="small">
     		<div class="dropdown">
- 				<button class="dropbtn">Sort By</button>
-  				<div class="dropdown-content">
-   					 <a href="#">Reviews</a>
-    				 <a href="#">Ratings</a>
-  					 <a href="#">Opening Date</a>
+ 				<button onclick="mySFunction()" class="dropbtn">Sort By</button>
+  				<div id="mySort" class="dropdown-content">
+   					<a href="#">Reviews</a>
+    				<a href="#">Ratings</a>
  			    </div>
 			</div>
-    		<li>
-    			<a href="#top" onclick=$("menu-close").click();>Filter By</a>
-    		</li>
+			<div class="dropdown">
+ 				<button onclick="myFFunction()" class="dropbtn">Filter By</button>
+  				<div id="myFilter" class="dropdown-content">
+   					<a href="#">Free</a>
+    				<a href="#">21+</a>
+					<a href="#">food&drink </a>
+ 			    </div>
+			</div>
     		
         </ul>
     </nav>
@@ -91,119 +92,11 @@
         </div>>
     </section>
 
-    <!-- Services
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-	-->
-
-    <!-- Portfolio
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Results</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-dark">View More Items</a>
-                </div>
-            </div>
-        </div>
-    </section>-->
+    <!-- Portfolio-->
 	<section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-md-6">
                     <a href="img/1.jpg" class="portfolio-box">
                         <img src="img/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -218,7 +111,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-md-6">
                     <a href="img/2.jpg" class="portfolio-box">
                         <img src="img/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -233,7 +126,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-md-6">
                     <a href="img/3.jpg" class="portfolio-box">
                         <img src="img/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -248,7 +141,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-md-6">
                     <a href="img/4.jpg" class="portfolio-box">
                         <img src="img/4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -295,6 +188,9 @@
                 </div>
             </div>
         </div>
+		<div class="text-vertical-center">
+			<a href="#about" class="btn btn-dark btn-lg">More Results</a>
+		</div>
     </section>
 
     <!-- Footer -->
@@ -307,7 +203,6 @@
                 </div>
             </div>
         </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
 
     <!-- jQuery -->
@@ -317,6 +212,48 @@
 
     <!-- Custom Theme JavaScript -->
     <script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function mySFunction() {
+		document.getElementById("mySort").classList.toggle("show");
+	}
+
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFFunction() {
+		document.getElementById("myFilter").classList.toggle("show");
+	}
+
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
